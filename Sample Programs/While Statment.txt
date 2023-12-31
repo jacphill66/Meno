@@ -1,0 +1,20 @@
+You Don't Talk About Meno!
+float f @ 0.0;
+while f < 10000.0:
+	f @ f + 1;
+	print f;
+end
+integer i @ 45;
+while i < 65.0:
+	i @ i + 1;
+	integer apples @ 1;
+	while apples < 10.0:
+		apples @ apples + 1;
+		print apples;
+		print i;
+	end
+end
+while T:
+	print 'infinite loop!';
+end
+end

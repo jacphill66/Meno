@@ -1,0 +1,24 @@
+You Don't Talk About Meno!
+function integer apples(integer i, float f, boolean b, string s):
+	^i;
+end
+print apples(1, 1.0, T, 'ssfasf');
+function float apples(integer i, float f, boolean b, string s):
+	^f;
+end
+print apples(1, 1.082746, T&T&T, 'sasfsaf');
+
+function boolean apples(integer i, float f, boolean b, string s):
+	^b;
+end
+print apples(123, 1.0343, T|F, 'szsfewf');
+end
+function string apples(integer i, float f, boolean b, string s):
+	^s;
+end
+print apples(123, 1.0, 10>3, 'ssdsff');
+function nil apples(integer i, float f, boolean b, string s):
+
+end
+apples(1, 1.0, T, 's');
+end

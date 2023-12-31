@@ -1,0 +1,60 @@
+You Don't Talk About Meno!
+
+	integer apples @ ((((2*3*4*5+3+3*3+3*5+4)))-103);
+	print apples;
+	apples @ 58;
+	print apples;
+
+	integer apples @ (((42 * 2 * 3 * 4 + 5 + 5 * 6)));
+	float pears @ (2.0*((4.0-5.0)/2.4));
+	#print ((((((pears))))));
+	apples @ 56;
+	#print(apples + 1);
+	#print ~(T&T&T&T&T&T&T&T&T&T&F);
+	#print ~~~~~~~~~(((((10000000 < 10)))));
+
+	if 1 = 1:
+		print 'should print';
+		if ~(1 = 1):
+			print 'should not print';
+		end
+		else:
+			integer count @ 10;
+			while count > 0:
+				print count;
+				print 'apples';
+				count @ count-1;
+			end
+		end
+	end
+	else:
+		print ('should not print');
+	end
+
+	function float pointlessRecursion(float n):
+		if n = 1: 
+			^n;
+		end
+		else:			
+			^1 + ((1*pointlessRecursion(n-1)))/1;
+		end
+	end
+	print pointlessRecursion(100.0);
+
+	function float fib(float n):
+		if n < 2:
+			^n;
+		end
+		else:
+			print n;
+			^fib(n-1) + fib(n-2);
+		end
+	end
+
+
+	#print 9.0 * fib(20.0);
+
+	#print(pointlessRecursion(100.0));
+
+	print fib(1+pointlessRecursion(19.0));
+end

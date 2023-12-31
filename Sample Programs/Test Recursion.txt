@@ -1,0 +1,52 @@
+You Don't Talk About Meno!
+integer applez @ 98;
+function integer factorial(integer f):
+	if f > 1:
+		^f*factorial(f-1);
+	end
+	else:
+		^1;
+	end
+end
+function float keepAddingOne(float f):
+	if f > 1.0:
+		^1.0+keepAddingOne(f-1);
+	end
+	else:
+		^1.0;
+	end
+end
+function float doubleRecursion(float f):
+	if f > 1.0:
+		^1.0+doubleRecursion(keepAddingOne(f-1));
+	end
+	else:
+		^1.0;
+	end
+end
+function nil doesRecursionWork(integer f):
+	if f > 1.0:
+		print 'Testing';
+		print f;
+		doesRecursionWork(f-1);
+	end
+	else:
+		print('Recursion Must Work');
+		print f;
+	end
+end
+function nil scopeTest(integer g2):
+	print applez;
+	print(g2);
+end
+function nil scopeTest2(integer g1):
+	scopeTest(g1);
+	print(g1);
+	print applez;
+end
+print(factorial(100));
+print doubleRecursion(keepAddingOne(keepAddingOne(keepAddingOne(5.0))));
+scopeTest2(1);
+#print 'should not print';
+print 'should print';
+end

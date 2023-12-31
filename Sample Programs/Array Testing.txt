@@ -1,0 +1,11 @@
+You Don't Talk About Meno!
+integer[] apples @ [6];
+print apples;
+apples[1] @ 2;
+print apples;
+print len(apples);
+print get(apples, 1);
+integer[] apples2 @ [7];
+apples @ apples2;
+print apples;
+end

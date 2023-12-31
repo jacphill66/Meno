@@ -1,0 +1,22 @@
+You Don't Talk About Meno!
+integer apples;
+apples @ 4;
+print 'apples';
+print apples;
+float f @ 1.9;
+print 'f';
+print f;
+boolean b @ F;
+print 'b';
+print b;
+string str;
+str @ 'strings stufff';
+print 'str';
+print str;
+float apples @ 1.7;
+print 'apples';
+print apples;
+float f @ 1.0;
+print 'f';
+print f;
+end

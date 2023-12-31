@@ -1,0 +1,76 @@
+You Don't Talk About Meno!
+class apples:
+	integer index;
+	float y;
+	float t @ 2.0;
+	apples l;
+	apples(integer indexx, float b):
+		print 'constructor';
+		index @ indexx;
+		print(index);
+		print 'b';
+		print b;
+	end
+	method nil pear(integer a):
+		print a;
+		print(b);
+	end
+	method integer getIndex(integer count):
+		apples z @ new apples(count, 6.2);
+		if count = 0:
+			^index;
+		end
+		else:
+			print count;
+			^z.getIndex(count-1);
+		end
+	end
+	method nil setY(integer c):
+		y @ c;
+		print 'y: ';
+		print y;
+	end
+	method nil setL(apples h):
+		l @ h;
+	end
+	method nil getLIndex(integer p):
+		print 'Index: ';
+		print index;
+		print 'Printing l.getLIndex(): ';
+		l.getIndex();
+		print 'L-Index: ';
+		print index;
+	end
+	method nil getIndex():
+		print 'index: ';
+		print index;
+	end
+	method apples m1(integer num):
+		^new apples(num, 5.8);
+	end
+	method apples m2(integer num):
+		^new apples(num, 5.8);
+	end
+	method apples m3(integer num):
+		^new apples(num, 5.8);
+	end
+	method apples m4(integer num):
+		^new apples(num, 5.8);
+	end
+	method apples m5(integer num):
+		^new apples(num, 5.8);
+	end
+	method apples m6(integer num):
+		^new apples(num, 5.8);
+	end
+end
+integer num1 @ 567;
+integer num2 @ 2;
+apples a @ new apples(num2, 2.0);
+integer num3 @ 3;
+new apples(num2, 3.0);
+new apples(num3, 4.0);
+a.m1(1).m2(2).m3(3).m4(4).m5(5).m6(6);
+a.setL(a);
+a.getLIndex(1);
+end

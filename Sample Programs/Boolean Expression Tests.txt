@@ -1,0 +1,15 @@
+You Don't Talk About Meno!
+boolean b @ T | F;
+if ((((((b & (((T | F)) & T) | F | F | F |F |F | ~F & T)&T))))):
+	print 'Worked!';
+end
+else:
+	print 'Should not print';
+end
+boolean b @ F;
+print b & ~T;
+print (b & (10 < 5)) | ~F;
+print ~((b & (2 > 5.1)) | ~T);
+print (b & (10.5 < 56)) | ~T;
+print (5 = 5) & T;
+end
